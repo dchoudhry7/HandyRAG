@@ -1,12 +1,12 @@
-# HandyRAG - DIY Home Repair & Safety Advisor
+# 🛠️ HandyRAG - DIY Home Repair & Safety Advisor
 
-HandyRAG is a lightweight, safety-first RAG (Retrieval-Augmented Generation) application designed to assist with DIY home repair tasks. It retrieves content from active builder manuals, contractor guides, or custom uploaded documents, using it to compile safety precautions, required tools, and step-by-step procedures.
+Welcome to **HandyRAG**! This project is a Retrieval-Augmented Generation (RAG) application designed to assist users with DIY home repair tasks while strictly prioritizing safety. 
 
-The application is built entirely in Python using **Streamlit** for the frontend and **LangChain** with **Chroma DB** and **Groq LLM (Llama 3.1)** on the backend.
+This repository serves as a showcase of my ability to build end-to-end AI applications using modern frameworks and Large Language Models.
 
 ---
 
-## Screenshots
+## 📸 Project Showcase
 
 ### Main Chat Advisor Panel
 ![HandyRAG Chat Advisor](assets/chat_advisor.png)
@@ -16,87 +16,51 @@ The application is built entirely in Python using **Streamlit** for the frontend
 
 ---
 
-## Workspace Structure
+## 🧠 Approach & Architecture
 
-- `main.py`: The entrypoint Streamlit web application. Contains the UI logic and RAG query processing.
-- `ingest.py`: Core ingestion pipeline script to pre-populate vectors from guides in `data/`.
-- `requirements.txt`: Project dependencies list.
-- `data/`: Local storage for standard reference guide `.txt` files.
-- `uploads/`: Dynamic storage directory for uploaded PDF manuals.
-- `chroma_db/`: Persistent local directory for Chroma vector store databases.
+The core philosophy behind HandyRAG is **Safety-First Retrieval**. Instead of relying a generalized LLM that might hallucinate dangerous advice for electrical or plumbing work, this application grounds its answers strictly in verified builder manuals and contractor guides.
 
----
-
-## Local Setup
-
-### 1. Requirements Installation
-Ensure Python (3.9+) is installed, then run:
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Environment Configuration
-Create a `.env` file in the root directory (based on `.env.example` template) and insert your Groq API Key:
-```env
-GROQ_API_KEY="your-actual-groq-api-key"
-PORT=8505
-```
-
-### 3. Run Ingestion (Optional)
-To index any standard text files placed in the `data/` directory into Chroma DB:
-```bash
-python ingest.py
-```
-
-### 4. Start the Application
-You can start the app directly using Python or Streamlit:
-```bash
-python main.py
-```
-Or:
-```bash
-streamlit run main.py --server.port 8505
-```
-Open your browser and navigate to `http://localhost:8505` to access the HandyRAG console.
+**Key Architecture Components:**
+- **Frontend UI:** Built an interactive, minimalistic web interface using **Streamlit**.
+- **Orchestration:** Leveraged **LangChain** to tie together document ingestion, chunking, embeddings, and LLM prompting.
+- **Vector Database:** Utilized **ChromaDB** for fast, persistent local vector storage and semantic search.
+- **Embeddings:** Powered by HuggingFace's `sentence-transformers/all-MiniLM-L6-v2` (running locally on CPU).
+- **LLM Engine:** Integrated **Groq (Llama 3.1 8B)** for lightning-fast, high-quality generation, rigidly prompted to output mandatory safety warnings before any step-by-step instructions.
 
 ---
 
-## Deploying to Streamlit Community Cloud
+## 📂 Codebase Deep-Dive
 
-Streamlit Community Cloud is a free hosting platform specifically tailored for Streamlit applications. Here is the step-by-step process to deploy HandyRAG:
+Here is a breakdown of the core files and how the technologies were implemented:
 
-### Step 1: Push Project to GitHub
-1. Create a new repository on GitHub (e.g., `handyrag`).
-2. Initialize Git in your local folder:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit of HandyRAG Streamlit app"
-   ```
-3. Link to your GitHub remote and push:
-   ```bash
-   git remote add origin https://github.com/your-username/handyrag.git
-   git branch -M main
-   git push -u origin main
-   ```
-   *Note: Ensure your `.env` and `chroma_db/` folders are ignored in your `.gitignore` to prevent committing secrets or cache directories.*
+### 🌟 `main.py`
+This is the heart of the application, serving as both the backend logic and the **Streamlit** frontend.
+- **Streamlit Integration:** Handles the UI layout, chat history state management, and real-time document upload forms.
+- **LangChain Usage:** 
+  - Uses `ChatGroq` for invoking the language model.
+  - Implements `HuggingFaceEmbeddings` to generate query embeddings on the fly.
+  - Connects to the local **ChromaDB** instance to perform `similarity_search` based on the user's chat input.
+  - Dynamically constructs a strict system prompt to enforce safety formatting before injecting the retrieved context.
 
-### Step 2: Sign In to Streamlit Cloud
-1. Go to [share.streamlit.io](https://share.streamlit.io/).
-2. Sign in using your GitHub account.
+### 📥 `ingest.py`
+This script handles the offline data pipeline, converting raw text guides into searchable vectors.
+- **LangChain Usage:**
+  - Uses `Document` objects to structure the incoming text data.
+  - Employs `RecursiveCharacterTextSplitter` to intelligently chunk documents (800 characters with 100 character overlap) to maintain context without exceeding token limits.
+  - Initializes the **ChromaDB** client (`Chroma.from_documents`) to embed and persist the vectors into the local `chroma_db/` directory.
 
-### Step 3: Deploy App
-1. Click **New app** in your Streamlit Cloud workspace.
-2. Select your repository (`handyrag`), branch (`main`), and main file path (`main.py`).
-3. Click on the **Advanced settings** button BEFORE deploying.
+### 📄 `requirements.txt`
+A meticulously managed dependency file optimized for cloud deployment.
+- Pinpoints versions for `streamlit`, `langchain`, `chromadb`, and `pypdf`.
+- Includes environment-specific fixes (like `pysqlite3-binary` and a custom PyTorch CPU index URL) to ensure the app deploys flawlessly to cloud environments without Out-Of-Memory (OOM) crashes.
 
-### Step 4: Configure Environment Secrets
-Streamlit Community Cloud uses a secrets management panel instead of `.env` files. 
-In the **Secrets** text area, paste your Groq API Key:
-```toml
-GROQ_API_KEY = "your-actual-groq-api-key"
-```
-Click **Save**.
+---
 
-### Step 5: Complete Deployment
-Click **Deploy!**. Streamlit Cloud will automatically provision a container, install dependencies from `requirements.txt`, configure the environment secrets, and launch your live application.
+## 🎯 Key Takeaways
+
+Building HandyRAG demonstrated my proficiency in:
+- 🏗️ **Architecting RAG systems** from scratch using LangChain.
+- 🗄️ **Managing Vector Databases** (ChromaDB) for persistent data retrieval.
+- 🎨 **Developing intuitive UIs** rapidly with Streamlit.
+- ☁️ **Troubleshooting Cloud Deployments** (managing dependency limits, SQLite versions, and OOM issues in containerized environments).
+- 🛡️ **Prompt Engineering** to enforce rigid safety constraints on open-source models (Llama 3.1).
