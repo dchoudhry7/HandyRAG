@@ -1,0 +1,33 @@
+DOCUMENT: PLUMBING LEAKS AND REPAIR GUIDE
+TOPIC: Fixing Sink Leaks and Replacing Washers
+
+CRITICAL SAFETY PROTOCOLS:
+1. ALWAYS locate and shut off the main water supply valve or the local shut-off valve under the sink before performing any work.
+2. Place a bucket or shallow pan and rags directly beneath the plumbing joint or P-trap to catch any residual water.
+3. If dealing with hot water lines, allow the pipes to cool completely before touching them to prevent burns.
+4. Wear safety glasses to protect your eyes from debris, rust, or mineral deposits.
+
+REQUIRED TOOLS:
+- Adjustable wrench (Crescent wrench)
+- Tongue-and-groove pliers (Channel locks)
+- Teflon thread seal tape
+- Bucket and dry rags
+- Replacement rubber washers or O-rings
+- Plumber's putty
+
+PROCEDURE FOR FIXING A LEAKING SINK DRAIN / P-TRAP:
+Step 1: Shut off the water supply by turning the silver knobs under the sink clockwise until they stop.
+Step 2: Place a bucket under the P-trap (the J-shaped pipe underneath the sink).
+Step 3: Unscrew the slip nuts connecting the P-trap to the sink drain and the wall pipe. Use tongue-and-groove pliers if the nuts are tight, but wrap the jaws in a rag to avoid scratching chrome pipes.
+Step 4: Remove the P-trap joint and drain the remaining water into the bucket. Clean any sludge or debris out of the trap.
+Step 5: Inspect the rubber washers inside the connections. If they are cracked, stiff, or misshapen, replace them with matching new washers.
+Step 6: Reassemble the P-trap. Tighten the slip nuts by hand, then add a quarter-turn with the pliers. Do not over-tighten, especially on plastic pipes, or they will crack.
+Step 7: Turn the water supply back on and run the faucet while inspecting all joints. If a slow drip remains, wrap the male threads of the pipe in Teflon tape (3-4 wraps clockwise) and re-tighten.
+
+PROCEDURE FOR FIXING A DRIPPING FAUCET STEM:
+Step 1: Shut off the water supply valves under the sink.
+Step 2: Remove the decorative cap on the faucet handle, unscrew the handle screw, and pull the handle off.
+Step 3: Use an adjustable wrench to loosen the brass packing nut on the cartridge stem and lift the stem out of the faucet body.
+Step 4: Check the rubber washer at the base of the stem or the cartridge O-ring. If it is damaged or worn, replace it.
+Step 5: Place a small amount of plumber's grease on the new washer/O-ring, reassemble the cartridge stem, tighten the packing nut, and reinstall the handle.
+Step 6: Turn the water supply back on and check for drips.

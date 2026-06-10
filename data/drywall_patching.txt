@@ -1,0 +1,33 @@
+DOCUMENT: DRYWALL PATCHING AND WALL REPAIR GUIDE
+TOPIC: Patching Holes, Sanding, and Wall Surface Prep
+
+CRITICAL SAFETY PROTOCOLS:
+1. ALWAYS wear a high-efficiency dust mask (such as N95) and safety goggles when sanding joint compound or plaster. Drywall dust contains fine particles that irritate the lungs and eyes.
+2. Ensure the room has proper ventilation (open windows or use a fan blowing dust outwards).
+3. Check behind the drywall using a stud finder or drill a small pilot hole before sawing, to avoid hitting electrical wiring or plumbing lines run through the wall studs.
+4. Keep floor pathways clear of drywall pieces and cords to prevent tripping hazards.
+
+REQUIRED TOOLS:
+- Drywall hand saw (keyhole saw)
+- Putty knife (3-inch and 6-inch width)
+- Sanding block or fine-grit sandpaper (120 to 220 grit)
+- Self-adhesive mesh drywall tape / metal patch kit
+- Joint compound (spackle or mud)
+- Utility knife
+- Dust mask and safety goggles
+
+PROCEDURE FOR PATCHING A SMALL HOLE (Under 2 Inches):
+Step 1: Clean the hole edges. Use a utility knife to scrape away loose plaster, paper, or drywall crumbs around the perimeter of the hole.
+Step 2: Press a self-adhesive mesh patch or fiber tape firmly over the hole.
+Step 3: Using a 3-inch putty knife, apply a thin layer of joint compound (spackle) over the mesh. Press firmly to push the compound through the mesh into the hole, then feather the edges outward so it blends with the wall.
+Step 4: Allow the compound to dry fully (usually 2-4 hours).
+Step 5: Put on your dust mask and goggles, and sand the patch lightly using 150-grit sandpaper until it is smooth and flush with the wall.
+Step 6: Apply a second thin coat of compound extending slightly further than the first coat. Let dry, sand smooth, wipe with a damp cloth to remove dust, and apply primer before painting.
+
+PROCEDURE FOR PATCHING A MEDIUM TO LARGE HOLE (2 to 6 Inches):
+Step 1: Cut out a clean square or rectangle around the damaged drywall using a keyhole saw. Make sure you don't cut wires.
+Step 2: Cut a piece of furring strip or a small wood board (1x2 pine) about 3 inches longer than the hole.
+Step 3: Slip the wood board inside the hole, centering it. Hold it tight against the back of the drywall and secure it in place by driving drywall screws through the face of the drywall into both ends of the board.
+Step 4: Cut a new piece of drywall to fit the square opening. Screw this patch piece into the wood backing board.
+Step 5: Apply fiberglass mesh tape over the four seams of the patch.
+Step 6: Apply joint compound over the tape using a 6-inch putty knife, feathering the edges. Allow to dry, sand with safety gear, apply a second coat if needed, sand, prime, and paint.

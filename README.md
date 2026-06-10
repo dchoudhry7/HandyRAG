@@ -6,6 +6,16 @@ The application is built entirely in Python using **Streamlit** for the frontend
 
 ---
 
+## Screenshots
+
+### Main Chat Advisor Panel
+![HandyRAG Chat Advisor](assets/chat_advisor.png)
+
+### Ingestion Selector with AI Auto-Detection
+![Sidebar Ingestion Selector](assets/sidebar_auto_detect.png)
+
+---
+
 ## Workspace Structure
 
 - `main.py`: The entrypoint Streamlit web application. Contains the UI logic and RAG query processing.

@@ -1,0 +1,34 @@
+DOCUMENT: ELECTRICAL SAFETY AND SWITCH REPLACEMENT GUIDE
+TOPIC: Replacing Outlets and Light Switches Safely
+
+CRITICAL SAFETY PROTOCOLS:
+1. ALWAYS shut off power at the main circuit breaker panel before touching any wires. Never rely on the wall switch to isolate power.
+2. ALWAYS use a non-contact voltage tester to verify the power is off at the outlet or switch before disconnecting wires. Place the tester tip near the hot terminal (usually the black wire or narrow slot).
+3. If the voltage tester alerts (beeps or lights up), the line is still live. Double-check your breaker panel.
+4. Work with insulated hand tools (e.g., rubber-grip screwdrivers) to prevent electrical shocks.
+5. Use safety glasses when cutting or stripping wire to prevent wire clippings from hitting your eyes.
+
+REQUIRED TOOLS:
+- Non-contact voltage tester
+- Insulated Phillips and flathead screwdrivers
+- Wire strippers / cutters
+- Electrical tape
+- Replacement outlet or single-pole switch
+- Needle-nose pliers
+
+PROCEDURE FOR REPLACING A WALL LIGHT SWITCH:
+Step 1: Go to your home's breaker panel. Locate the breaker labeled for the room you are working in and switch it to the "OFF" position.
+Step 2: Remove the faceplate screws of the light switch and gently pull the switch out from the junction box, exposing the wires.
+Step 3: Hold your non-contact voltage tester close to the screw terminals on the side of the switch. Ensure the tester indicates no power (no light or sound).
+Step 4: Unscrew the wires from the old switch. Typically, you will find two black (hot) wires and a bare copper or green (ground) wire.
+Step 5: Inspect the exposed copper ends. If they are oxidized or nicked, cut them back and strip 3/4-inch of fresh insulation off the wire.
+Step 6: Make a small loop (J-hook) in the copper wire ends using needle-nose pliers. Loop the wire around the terminal screws of the new switch in a clockwise direction (so tightening the screw closes the hook).
+Step 7: Attach the green/bare copper ground wire to the green grounding screw. Connect the two black wires to the two remaining brass terminal screws.
+Step 8: Wrap the sides of the switch with black electrical tape to cover the terminal screws. This prevents accidental shorts against the junction box.
+Step 9: Carefully fold the wires and push the switch back into the box. Secure the switch mounting screws, replace the faceplate, turn the breaker back on, and test the switch.
+
+PROCEDURE FOR TESTING AN OUTLET FOR REVERSE POLARITY:
+- If a three-prong outlet tester shows a "Reverse Polarity" fault (yellow and red lights), it means the hot and neutral wires are switched.
+- Neutral wire (white) must connect to the silver terminal screws (wider slot).
+- Hot wire (black) must connect to the brass terminal screws (narrower slot).
+- Ground wire (bare/green) must connect to the green grounding screw.
