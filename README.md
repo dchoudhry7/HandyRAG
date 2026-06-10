@@ -8,11 +8,11 @@ This repository serves as a showcase of my ability to build end-to-end AI applic
 
 ## 📸 Project Showcase
 
-### Main Chat Advisor Panel
-![HandyRAG Chat Advisor](assets/chat_advisor.png)
-
 ### Ingestion Selector with AI Auto-Detection
 ![Sidebar Ingestion Selector](assets/sidebar_auto_detect.png)
+
+### Main Chat Advisor Panel
+![HandyRAG Chat Advisor](assets/chat_advisor.png)
 
 ---
 
