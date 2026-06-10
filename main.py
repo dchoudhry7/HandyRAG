@@ -1,6 +1,14 @@
 import os
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 import sys
+
+# Streamlit Cloud fix for ChromaDB requiring sqlite3 >= 3.35.0
+try:
+    __import__('pysqlite3')
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+except ImportError:
+    pass
+
 import pypdf
 import streamlit as st
 from dotenv import load_dotenv
